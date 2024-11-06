@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useRef } from 'react';
-import SearchForm from '../components/SearchForm';
+import SearchForm from '../app/SearchForm';
 import { gsap } from 'gsap';
 
 const Home = () => {
@@ -49,19 +49,9 @@ const Home = () => {
       ref={containerRef}
       className="w-screen flex items-center justify-center h-[80vh] bg-cover bg-center"
     >
-      <div className="flex flex-col items-center justify-center w-[90vw] lg:w-[80vw] gap-">
-        <div className="flex flex-col w-screen items-center justify-center">
-          {/* <h1
-            ref={h1Ref}
-            className="w-screen text-[16.6vw] opensans font-black text-black/5 text-center absolute "
-          >
-          Let's Travel
-          </h1> */}
-          {/* <p className="w-[70vw] lg:w-[40vw] text-sm opensans font-medium text-center">
-            Find your flight and explore the world with us. We will take care of the rest.
-          </p> */}
-        </div>
-        <div ref={searchFormRef} className="w-full flex items-center justify-center z-10">
+      <div className="flex flex-col items-center justify-center w-[90vw] ">
+      
+        <div ref={searchFormRef} className="w-full flex items-center justify-center z-20">
           <SearchForm />
         </div>
       </div>

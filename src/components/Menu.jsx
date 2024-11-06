@@ -37,7 +37,7 @@ const MenuToggle = () => {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
-            className="absolute top-[76px] right-0 bg-[#004FB5] text-white shadow-lg overflow-hidden z-20"
+            className="absolute top-[76px] right-0 bg-[#004FB5] text-white shadow-lg overflow-hidden z-30"
           >
             <ul className="p-4 w-[90vw] lg:w-[30vw] bebas flex flex-col gap-5">
               {['Home', 'BOOKING', 'PROFILE/SETTINGS', 'SUPPORT', 'SIGN UP', 'SIGN IN'].map((item, index) => (

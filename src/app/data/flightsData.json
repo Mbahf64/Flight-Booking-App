@@ -1,0 +1,403 @@
+[
+    {
+      "flight_number": "AF101",
+      "company": "Air France",
+      "departureCity": "Paris",
+      "arrivalCity": "New York",
+      "departureDate": "2024-11-06",
+      "departureTime": "08:00",
+      "arrivalTime": "12:00",
+      "classType": "Economy"
+    },
+    {
+      "flight_number": "LH202",
+      "company": "Lufthansa",
+      "departureCity": "Frankfurt",
+      "arrivalCity": "Tokyo",
+      "departureDate": "2024-11-07",
+      "departureTime": "10:30",
+      "arrivalTime": "03:30",
+      "classType": "Business"
+    },
+    {
+      "flight_number": "EK303",
+      "company": "Emirates",
+      "departureCity": "Dubai",
+      "arrivalCity": "Sydney",
+      "departureDate": "2024-11-08",
+      "departureTime": "22:15",
+      "arrivalTime": "06:30",
+      "classType": "First"
+    },
+    {
+      "flight_number": "BA404",
+      "company": "British Airways",
+      "departureCity": "London",
+      "arrivalCity": "Cape Town",
+      "departureDate": "2024-11-09",
+      "departureTime": "12:00",
+      "arrivalTime": "23:45",
+      "classType": "Economy"
+    },
+    {
+      "flight_number": "DL505",
+      "company": "Delta Airlines",
+      "departureCity": "Atlanta",
+      "arrivalCity": "Los Angeles",
+      "departureDate": "2024-11-10",
+      "departureTime": "15:30",
+      "arrivalTime": "17:30",
+      "classType": "Economy"
+    },
+    {
+      "flight_number": "QF606",
+      "company": "Qantas",
+      "departureCity": "Sydney",
+      "arrivalCity": "Melbourne",
+      "departureDate": "2024-11-11",
+      "departureTime": "09:00",
+      "arrivalTime": "10:30",
+      "classType": "Business"
+    },
+    {
+      "flight_number": "CX707",
+      "company": "Cathay Pacific",
+      "departureCity": "Hong Kong",
+      "arrivalCity": "Singapore",
+      "departureDate": "2024-11-12",
+      "departureTime": "14:20",
+      "arrivalTime": "18:00",
+      "classType": "First"
+    },
+    {
+      "flight_number": "SA808",
+      "company": "South African Airways",
+      "departureCity": "Johannesburg",
+      "arrivalCity": "Nairobi",
+      "departureDate": "2024-11-13",
+      "departureTime": "07:45",
+      "arrivalTime": "10:00",
+      "classType": "Economy"
+    },
+    {
+      "flight_number": "AF909",
+      "company": "Air France",
+      "departureCity": "Paris",
+      "arrivalCity": "Lagos",
+      "departureDate": "2024-11-14",
+      "departureTime": "17:00",
+      "arrivalTime": "21:30",
+      "classType": "Economy"
+    },
+    {
+      "flight_number": "EK1010",
+      "company": "Emirates",
+      "departureCity": "Dubai",
+      "arrivalCity": "New York",
+      "departureDate": "2024-11-15",
+      "departureTime": "01:00",
+      "arrivalTime": "08:00",
+      "classType": "First"
+    },
+    {
+      "flight_number": "AA111",
+      "company": "American Airlines",
+      "departureCity": "Dallas",
+      "arrivalCity": "Chicago",
+      "departureDate": "2024-11-16",
+      "departureTime": "09:45",
+      "arrivalTime": "12:15",
+      "classType": "Economy"
+    },
+    {
+      "flight_number": "SQ1212",
+      "company": "Singapore Airlines",
+      "departureCity": "Singapore",
+      "arrivalCity": "Tokyo",
+      "departureDate": "2024-11-17",
+      "departureTime": "06:00",
+      "arrivalTime": "13:00",
+      "classType": "Business"
+    },
+    {
+      "flight_number": "UA1313",
+      "company": "United Airlines",
+      "departureCity": "San Francisco",
+      "arrivalCity": "Denver",
+      "departureDate": "2024-11-18",
+      "departureTime": "11:00",
+      "arrivalTime": "13:00",
+      "classType": "Economy"
+    },
+    {
+      "flight_number": "VA1414",
+      "company": "Virgin Australia",
+      "departureCity": "Brisbane",
+      "arrivalCity": "Auckland",
+      "departureDate": "2024-11-19",
+      "departureTime": "17:20",
+      "arrivalTime": "22:45",
+      "classType": "First"
+    },
+    {
+      "flight_number": "AF1515",
+      "company": "Air France",
+      "departureCity": "Paris",
+      "arrivalCity": "Dubai",
+      "departureDate": "2024-11-20",
+      "departureTime": "12:00",
+      "arrivalTime": "20:30",
+      "classType": "Economy"
+    },
+    {
+      "flight_number": "QF1616",
+      "company": "Qantas",
+      "departureCity": "Sydney",
+      "arrivalCity": "Perth",
+      "departureDate": "2024-11-21",
+      "departureTime": "18:00",
+      "arrivalTime": "20:00",
+      "classType": "Business"
+    },
+    {
+      "flight_number": "SA1717",
+      "company": "South African Airways",
+      "departureCity": "Cape Town",
+      "arrivalCity": "Nairobi",
+      "departureDate": "2024-11-22",
+      "departureTime": "14:30",
+      "arrivalTime": "20:00",
+      "classType": "Economy"
+    },
+    {
+      "flight_number": "EK1818",
+      "company": "Emirates",
+      "departureCity": "Dubai",
+      "arrivalCity": "Los Angeles",
+      "departureDate": "2024-11-23",
+      "departureTime": "08:30",
+      "arrivalTime": "16:30",
+      "classType": "First"
+    },
+    {
+      "flight_number": "LH1919",
+      "company": "Lufthansa",
+      "departureCity": "Frankfurt",
+      "arrivalCity": "Beijing",
+      "departureDate": "2024-11-24",
+      "departureTime": "10:00",
+      "arrivalTime": "18:00",
+      "classType": "Business"
+    },
+    {
+      "flight_number": "BA2020",
+      "company": "British Airways",
+      "departureCity": "London",
+      "arrivalCity": "Johannesburg",
+      "departureDate": "2024-11-25",
+      "departureTime": "20:00",
+      "arrivalTime": "07:00",
+      "classType": "Economy"
+    },
+    {
+        "flight_number": "AF101",
+        "company": "Air France",
+        "departureCity": "Lagos",
+        "arrivalCity": "Nairobi",
+        "departureDate": "2024-11-10",
+        "departureTime": "08:00",
+        "arrivalTime": "14:00",
+        "classType": "Economy"
+      },
+      {
+        "flight_number": "AF102",
+        "company": "Air France",
+        "departureCity": "Lagos",
+        "arrivalCity": "Nairobi",
+        "departureDate": "2024-11-10",
+        "departureTime": "12:00",
+        "arrivalTime": "18:00",
+        "classType": "Business"
+      },
+      {
+        "flight_number": "AF103",
+        "company": "Air France",
+        "departureCity": "Lagos",
+        "arrivalCity": "Nairobi",
+        "departureDate": "2024-11-11",
+        "departureTime": "14:00",
+        "arrivalTime": "20:00",
+        "classType": "Economy"
+      },
+      {
+        "flight_number": "AF104",
+        "company": "Air France",
+        "departureCity": "Lagos",
+        "arrivalCity": "Nairobi",
+        "departureDate": "2024-11-12",
+        "departureTime": "10:00",
+        "arrivalTime": "16:00",
+        "classType": "Economy"
+      },
+      {
+        "flight_number": "AF105",
+        "company": "Air France",
+        "departureCity": "Lagos",
+        "arrivalCity": "Nairobi",
+        "departureDate": "2024-11-13",
+        "departureTime": "16:00",
+        "arrivalTime": "22:00",
+        "classType": "Business"
+      },
+      {
+        "flight_number": "BA201",
+        "company": "British Airways",
+        "departureCity": "Cairo",
+        "arrivalCity": "Accra",
+        "departureDate": "2024-11-10",
+        "departureTime": "09:00",
+        "arrivalTime": "13:00",
+        "classType": "Economy"
+      },
+      {
+        "flight_number": "BA202",
+        "company": "British Airways",
+        "departureCity": "Cairo",
+        "arrivalCity": "Accra",
+        "departureDate": "2024-11-10",
+        "departureTime": "15:00",
+        "arrivalTime": "19:00",
+        "classType": "Business"
+      },
+      {
+        "flight_number": "BA203",
+        "company": "British Airways",
+        "departureCity": "Cairo",
+        "arrivalCity": "Accra",
+        "departureDate": "2024-11-11",
+        "departureTime": "12:00",
+        "arrivalTime": "16:00",
+        "classType": "Economy"
+      },
+      {
+        "flight_number": "BA204",
+        "company": "British Airways",
+        "departureCity": "Cairo",
+        "arrivalCity": "Accra",
+        "departureDate": "2024-11-12",
+        "departureTime": "17:00",
+        "arrivalTime": "21:00",
+        "classType": "Economy"
+      },
+      {
+        "flight_number": "BA205",
+        "company": "British Airways",
+        "departureCity": "Cairo",
+        "arrivalCity": "Accra",
+        "departureDate": "2024-11-13",
+        "departureTime": "18:00",
+        "arrivalTime": "22:00",
+        "classType": "Business"
+      },
+      {
+        "flight_number": "KQ301",
+        "company": "Kenya Airways",
+        "departureCity": "Johannesburg",
+        "arrivalCity": "Nairobi",
+        "departureDate": "2024-11-10",
+        "departureTime": "10:00",
+        "arrivalTime": "14:00",
+        "classType": "Economy"
+      },
+      {
+        "flight_number": "KQ302",
+        "company": "Kenya Airways",
+        "departureCity": "Johannesburg",
+        "arrivalCity": "Nairobi",
+        "departureDate": "2024-11-10",
+        "departureTime": "15:00",
+        "arrivalTime": "19:00",
+        "classType": "Business"
+      },
+      {
+        "flight_number": "KQ303",
+        "company": "Kenya Airways",
+        "departureCity": "Johannesburg",
+        "arrivalCity": "Nairobi",
+        "departureDate": "2024-11-11",
+        "departureTime": "13:00",
+        "arrivalTime": "17:00",
+        "classType": "Economy"
+      },
+      {
+        "flight_number": "KQ304",
+        "company": "Kenya Airways",
+        "departureCity": "Johannesburg",
+        "arrivalCity": "Nairobi",
+        "departureDate": "2024-11-12",
+        "departureTime": "18:00",
+        "arrivalTime": "22:00",
+        "classType": "Economy"
+      },
+      {
+        "flight_number": "KQ305",
+        "company": "Kenya Airways",
+        "departureCity": "Johannesburg",
+        "arrivalCity": "Nairobi",
+        "departureDate": "2024-11-13",
+        "departureTime": "09:00",
+        "arrivalTime": "13:00",
+        "classType": "Business"
+      },
+      {
+        "flight_number": "SA401",
+        "company": "South African Airways",
+        "departureCity": "Cape Town",
+        "arrivalCity": "Lagos",
+        "departureDate": "2024-11-10",
+        "departureTime": "11:00",
+        "arrivalTime": "17:00",
+        "classType": "Economy"
+      },
+      {
+        "flight_number": "SA402",
+        "company": "South African Airways",
+        "departureCity": "Cape Town",
+        "arrivalCity": "Lagos",
+        "departureDate": "2024-11-10",
+        "departureTime": "16:00",
+        "arrivalTime": "22:00",
+        "classType": "Business"
+      },
+      {
+        "flight_number": "SA403",
+        "company": "South African Airways",
+        "departureCity": "Cape Town",
+        "arrivalCity": "Lagos",
+        "departureDate": "2024-11-10",
+        "departureTime": "14:00",
+        "arrivalTime": "20:00",
+        "classType": "Economy"
+      },
+      {
+        "flight_number": "SA404",
+        "company": "South African Airways",
+        "departureCity": "Cape Town",
+        "arrivalCity": "Lagos",
+        "departureDate": "2024-11-10",
+        "departureTime": "19:00",
+        "arrivalTime": "01:00",
+        "classType": "Economy"
+      },
+      {
+        "flight_number": "SA405",
+        "company": "South African Airways",
+        "departureCity": "Cape Town",
+        "arrivalCity": "Lagos",
+        "departureDate": "2024-11-10H",
+        "departureTime": "21:00",
+        "arrivalTime": "03:00",
+        "classType": "Business"
+      }
+  ]
+  
