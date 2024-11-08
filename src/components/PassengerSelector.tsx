@@ -33,7 +33,7 @@ const PassengerSelector: React.FC<PassengerSelectorProps> = ({ value, onChange, 
     <div className="relative w-full flex items-center justify-center z-10">
       {/* Button to trigger the popover */}
       <div className="w-full flex flex-col gap-2 bg-white bg-opacity-50 p-3">
-        <p className="opensans text-[12px] font-semibold">DEPARTURE</p>
+        <p className="opensans text-[12px] font-semibold">PASSENGER</p>
         <Button
           onClick={togglePopover}
           className="flex items-center justify-start gap-2 w-full text-sm text-black opensans font-normal transition-all duration-300"

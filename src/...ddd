@@ -1,0 +1,277 @@
+// "use client";
+// import React, { useState } from "react";
+// import { DatePickerDemo } from "../components/Datepicker";
+// import Class from "../components/Class";
+// import PassengerSelector from "../components/PassengerSelector";
+// import { PlaneLanding, PlaneTakeoff, Send } from "lucide-react";
+
+// // Sample local dataset for flights
+// const flightData = [
+//   { id: 1, from: "New York", to: "Los Angeles", date: "2024-11-10", time: "10:00 AM", availableSeats: 5 },
+//   { id: 2, from: "New York", to: "Chicago", date: "2024-11-11", time: "12:00 PM", availableSeats: 3 },
+//   { id: 3, from: "Los Angeles", to: "San Francisco", date: "2024-11-12", time: "9:00 AM", availableSeats: 8 },
+//   // Add more flights as needed
+// ];
+
+// export default function FlightSearchForm() {
+//   const [departure, setDeparture] = useState("");
+//   const [destination, setDestination] = useState("");
+//   const [selectedDate, setSelectedDate] = useState(null);
+//   const [flightClass, setFlightClass] = useState("economy");
+//   const [passengerCount, setPassengerCount] = useState(1);
+//   const [availableFlights, setAvailableFlights] = useState([]);
+//   const [error, setError] = useState("");
+
+//   const handleSubmit = (e) => {
+//     e.preventDefault();
+
+//     // Check if required fields are filled
+//     if (!departure || !destination || !selectedDate) {
+//       setError("Please fill in all required fields.");
+//       return;
+//     }
+
+//     // Filter flights based on search criteria
+//     const matchingFlights = flightData.filter(flight => {
+//       return (
+//         flight.from.toLowerCase() === departure.toLowerCase() &&
+//         flight.to.toLowerCase() === destination.toLowerCase() &&
+//         flight.date === selectedDate // Ensure the selected date matches the dataset format
+//       );
+//     });
+
+//     setAvailableFlights(matchingFlights);
+//     setError(matchingFlights.length === 0 ? "No flights found for the selected criteria." : "");
+//   };
+
+//   return (
+//     <div className="w-full lg:w-[60vw] border border-white p-6 z-10">
+//       <p className="opensans font-semibold text-2xl mb-3">Search Flight</p>
+//       <div className="flex flex-col gap-3 w-full">
+//         <div className="flex flex-col items-start justify-center space-y-1 lg:space-y-0 w-full gap-2">
+//           {/* Departure Input */}
+//           <div className="w-full bg-white bg-opacity-50 p-3 flex flex-col gap-2 z-10">
+//             <p className="opensans text-[12px] font-semibold">FROM</p>
+//             <div className="flex gap-2">
+//               <PlaneTakeoff size={20} strokeWidth={1} className="text-black" />
+//               <input
+//                 type="text"
+//                 placeholder="Your Location"
+//                 onChange={(e) => setDeparture(e.target.value)}
+//                 className="w-full placeholder:text-sm placeholder:text-black bg-transparent outline-none"
+//               />
+//             </div>
+//           </div>
+
+//           {/* Destination Input */}
+//           <div className="w-full bg-white bg-opacity-50 p-3 flex flex-col gap-2 z-10">
+//             <p className="opensans text-[12px] font-semibold">TO</p>
+//             <div className="flex gap-2">
+//               <PlaneLanding size={20} strokeWidth={1} className="text-black" />
+//               <input
+//                 type="text"
+//                 placeholder="Your Destination"
+//                 onChange={(e) => setDestination(e.target.value)}
+//                 className="w-full placeholder:text-sm placeholder:text-black bg-transparent outline-none"
+//               />
+//             </div>
+//           </div>
+
+//           {/* Date Picker and Class Selector */}
+//           <div className="flex gap-2 w-full">
+//             <DatePickerDemo selectedDate={selectedDate} onDateChange={setSelectedDate} />
+//             <Class selectedClass={flightClass} onClassChange={setFlightClass} />
+//           </div>
+
+//           {/* Passenger Selector */}
+//           <PassengerSelector selectedPassengers={passengerCount} onPassengerChange={setPassengerCount} />
+//         </div>
+
+//         {/* Promo Code and Submit Button */}
+//         <div className="flex items-center justify-end gap-3 z-10">
+//           <button className="flex items-center gap-1 text-white">
+//             <p className="text-2xl font-semibold">+</p>
+//             <p className="font-semibold">Add Promo Code</p>
+//           </button>
+//           <button
+//             onClick={handleSubmit}
+//             className="w-auto flex items-center gap-2 opensans justify-center bg-[#004FB5] text-white py-2 px-4 hover:bg-blue-700"
+//           >
+//             <Send size={18} />
+//             Show Flights
+//           </button>
+//         </div>
+
+//         {/* Display error if exists */}
+//         {error && <p className="text-red-500 mt-3">{error}</p>}
+
+//         {/* Display available flights */}
+//         {availableFlights.length > 0 && (
+//           <div className="mt-4">
+//             <h3 className="font-semibold text-lg">Available Flights:</h3>
+//             <ul className="list-disc list-inside">
+//               {availableFlights.map(flight => (
+//                 <li key={flight.id} className="py-2">
+//                   {flight.from} to {flight.to} at {flight.time} on {flight.date} - Seats available: {flight.availableSeats}
+//                 </li>
+//               ))}
+//             </ul>
+//           </div>
+//         )}
+//       </div>
+//     </div>
+//   );
+// }
+
+// // import React, { useState } from "react";
+// // import { flightsData } from "../app/data/flightsData";
+
+// // const FlightSearch = () => {
+// //   const [from, setFrom] = useState("");
+// //   const [to, setTo] = useState("");
+// //   const [date, setDate] = useState("");
+// //   const [travelClass, setTravelClass] = useState("Economy");
+// //   const [passengers, setPassengers] = useState(1);
+// //   const [results, setResults] = useState([]);
+// //   const [isModalOpen, setIsModalOpen] = useState(false);
+
+// //   const handleSearch = () => {
+// //     // Filter flights based on search criteria
+// //     const filteredFlights = flightsData.filter(
+// //       (flight) =>
+// //         flight.from.toLowerCase() === from.toLowerCase() &&
+// //         flight.to.toLowerCase() === to.toLowerCase() &&
+// //         flight.date === date &&
+// //         flight.class === travelClass
+// //     );
+
+// //     // Calculate total price for each matching flight
+// //     const updatedResults = filteredFlights.map((flight) => ({
+// //       ...flight,
+// //       totalPrice: flight.price * passengers,
+// //     }));
+
+// //     setResults(updatedResults);
+// //     setIsModalOpen(true); // Open modal when search is performed
+// //   };
+
+// //   const closeModal = () => {
+// //     setIsModalOpen(false);
+// //   };
+
+// //   return (
+// //     <div className="flex flex-col items-center min-h-screen py-8 ">
+// //       <h1 className="text-3xl font-bold mb-6">Flight Search</h1>
+
+// //       {/* Search Form */}
+// //       <form
+// //         onSubmit={(e) => {
+// //           e.preventDefault();
+// //           handleSearch();
+// //         }}
+// //         className="bg-white p-6 rounded-lg shadow-lg w-[90%] "
+// //       >
+// //         <label className="block mb-4">
+// //           <span className="text-gray-700">Traveling From:</span>
+// //           <input
+// //             type="text"
+// //             value={from}
+// //             onChange={(e) => setFrom(e.target.value)}
+// //             required
+// //             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+// //           />
+// //         </label>
+// //         <label className="block mb-4">
+// //           <span className="text-gray-700">Traveling To:</span>
+// //           <input
+// //             type="text"
+// //             value={to}
+// //             onChange={(e) => setTo(e.target.value)}
+// //             required
+// //             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+// //           />
+// //         </label>
+// //         <label className="block mb-4">
+// //           <span className="text-gray-700">Departure Date:</span>
+// //           <input
+// //             type="date"
+// //             value={date}
+// //             onChange={(e) => setDate(e.target.value)}
+// //             required
+// //             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+// //           />
+// //         </label>
+// //         <label className="block mb-4">
+// //           <span className="text-gray-700">Class:</span>
+// //           <select
+// //             value={travelClass}
+// //             onChange={(e) => setTravelClass(e.target.value)}
+// //             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+// //           >
+// //             <option value="Economy">Economy</option>
+// //             <option value="Business">Business</option>
+// //             <option value="First Class">First Class</option>
+// //           </select>
+// //         </label>
+// //         <label className="block mb-6">
+// //           <span className="text-gray-700">Passengers:</span>
+// //           <input
+// //             type="number"
+// //             min="1"
+// //             value={passengers}
+// //             onChange={(e) => setPassengers(parseInt(e.target.value))}
+// //             className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring focus:ring-blue-200 focus:ring-opacity-50"
+// //           />
+// //         </label>
+// //         <button
+// //           type="submit"
+// //           className="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600"
+// //         >
+// //           Search
+// //         </button>
+// //       </form>
+
+// //       {/* Modal */}
+// //       {isModalOpen && (
+// //         <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm flex items-center justify-center z-50">
+// //           <div className="bg-white rounded-lg shadow-lg p-6 w-full max-w-lg relative">
+// //             <button
+// //               onClick={closeModal}
+// //               className="absolute top-2 right-2 text-gray-500 hover:text-gray-700"
+// //             >
+// //               &times;
+// //             </button>
+// //             <h2 className="text-2xl font-semibold mb-4">Search Results</h2>
+// //             {results.length > 0 ? (
+// //               <ul>
+// //                 {results.map((flight, index) => (
+// //                   <li key={index} className="mb-4 border-b pb-4">
+// //                     <p className="text-lg">
+// //                       <span className="font-bold">{flight.from}</span> to{" "}
+// //                       <span className="font-bold">{flight.to}</span> - {flight.class} - $
+// //                       {flight.totalPrice} (for {passengers} passenger{passengers > 1 ? "s" : ""})
+// //                     </p>
+// //                     <p className="text-gray-600">Date: {flight.date}</p>
+// //                   </li>
+// //                 ))}
+// //               </ul>
+// //             ) : (
+// //               <p className="text-gray-600">No flights found</p>
+// //             )}
+// //             <button
+// //               onClick={closeModal}
+// //               className="mt-4 w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600"
+// //             >
+// //               Go Back
+// //             </button>
+// //           </div>
+// //         </div>
+// //       )}
+// //     </div>
+// //   );
+// // };
+
+// // export default FlightSearch;
+
+// src/pages/index.tsx
+// src/pages/index.tsx
